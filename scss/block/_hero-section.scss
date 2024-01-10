@@ -1,0 +1,97 @@
+.hero{
+    @include displayFlex;
+    margin-bottom: 114px;
+}
+
+.hero__content{
+    width: 518px;
+}
+
+h1{
+    @include textStyle($font-size: 40px, $font-weight: 700, $line-height: 60px );
+    padding-bottom: 18px;
+}
+
+.hero__text{
+    @include textStyle($font-size: 18px )
+}
+
+.hero__buttons{
+    padding-top: 60px;
+}
+
+.hero__link{
+    @include btnStyle;
+    @include transition;
+    margin-right: 30px;
+
+    &:hover{
+        @include hover;
+    }
+}
+
+.hero__btn{
+    @include transition;
+    @include btnStyle($font-weight:600, $color:#02897A);
+    text-decoration: underline;
+    background: none;
+    border: none;
+
+    position: relative;
+    padding-left: 30px;
+
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 20px;
+        height: 17px;
+        background: url('../images/play-icon.svg') center/contain no-repeat;
+    }
+
+    &:active{
+        opacity: 0.7;
+    }
+}
+
+
+@media (max-width:949px){
+    .hero{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .hero__img{
+        max-width: 100%;
+        background-image: url(../images/hero-mobile@2x.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        // background-position: contain;
+    }
+
+    h1, .hero__text, .hero__buttons, .hero, .hero__content{
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero__content{
+        width: 100%;
+    }
+
+    h1{
+        @include textStyle($font-size: 36px, $font-weight: 700, $line-height: 60px );
+        padding-bottom: 18px;
+    }
+
+    .hero__buttons{
+        display: inline-block;
+        padding-top: 30px;
+    }
+
+    .hero__btn{
+        margin-top: 15px;
+    }
+}

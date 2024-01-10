@@ -1,0 +1,82 @@
+.service-section{
+    margin-bottom: 120px;
+    padding-bottom: 90px;
+    background-image: url(../images/service-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.service__list{
+    @include displayFlex;
+    gap: 46px;
+}
+
+.service__title{
+    @include textStyle($font-weight:700, $font-size:32px);
+    text-align: center;
+    padding-bottom: 66px;
+}
+
+.service__name{
+    @include textStyle($font-weight:600, $font-size:22px);
+    padding-top: 30px;
+}
+
+.service__text{
+     @include textStyle($font-weight:400, $font-size:16px, $line-height:26px)
+}
+
+.service__item{
+    width: 250px;
+}
+
+.service__btn{
+    @include btnStyle;
+    @include transition;
+
+    &:hover{
+        opacity: 0.8;
+    }
+
+    &:active{
+        opacity: 0.5;
+    }
+}
+
+.service__btn--tc{
+    padding-top: 75px;
+    text-align: center;
+}
+
+@media (max-width:949px){
+
+    .service-section{
+        background-image: url(../images/service__mobile-bg.png);
+        padding-bottom: 52px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+    }
+
+    .service__title{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .service__list{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .service__item{
+        width: 100%;
+    }
+
+    .service__btn--tc{
+        padding-top: 50px;
+        width: 100%;
+    }
+}

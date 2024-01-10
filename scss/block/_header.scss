@@ -1,0 +1,106 @@
+header{
+    padding-bottom: 52px;
+}
+
+.site-header{
+    margin-top: 20px;
+    @include displayFlex;
+}
+
+.header__logo{
+    display: inline-block;
+}
+
+.navbar, .navbar__list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar__link{
+    @include textStyle;
+    @include transition;
+
+    &:hover{
+        font-weight: 600;
+    }
+
+    &:active{
+        opacity: 0.7;
+    }
+}
+
+.navbar__btn{
+    display: flex;
+    gap: 24px;
+}
+
+.navbar__signIn{
+    @include textStyle($color:#173A56, $font-weight:600, $line-height:normal);
+    border: 1px solid #BCD0E5;
+    @include transition;
+
+    @include headerBtn;
+
+    &:hover{
+        background-color: #02897A;
+        color: #FFF;
+    }
+
+    &:active{
+        opacity: 0.7;
+    }
+}
+
+.navbar__signUp{
+    @include textStyle($color:#FFF, $font-weight:600, $line-height:normal);
+    border: 1px solid #BCD0E5;
+    @include transition;
+
+    @include headerBtn;
+    background-color: #02897A;
+
+    &:hover{
+        background-color:transparent;
+        color: #173A56;
+        border: 1px solid #BCD0E5;
+    }
+
+    &:active{
+        background-color: #02897A;
+        opacity: 0.7;
+    }
+}
+
+.hamburger__btn{
+    display: none;
+}
+
+// tablet
+
+// phone
+
+@media (max-width:949px){
+
+    .navbar__link, .navbar__btn{
+        display: none;
+    }
+
+    .hamburger__btn{
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .header__logo{
+        width: 170px;
+        height: 36.364px;
+    }
+}
+
+
+
+// .mode__img{
+//     background-color: transparent;
+// }
