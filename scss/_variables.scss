@@ -1,7 +1,7 @@
-@mixin displayFlex(){
+@mixin displayFlex($align-items: center, $justify-content: space-between){
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: $align-items;
+    justify-content: $justify-content;
 }
 
 @mixin textStyle($color:#22343D, $font-weight:400, $font-size:16px, $line-height:28px){
@@ -18,16 +18,16 @@
     border-radius: 4px;
 }
 
-@mixin btnStyle($font-weight: 700, $color:#FFF){
+@mixin btnStyle($padding: 15px 41px, $background: #02897A, $border-radius:4px, $font-weight: 700, $color:#FFF){
     color: $color;
     font-family: Poppins, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: $font-weight;
     line-height: normal;
-    padding: 15px 41px;
-    border-radius: 4px;
-    background: #02897A;
+    padding: $padding;
+    border-radius: $border-radius;
+    background: $background;
     border: 1px solid #BCD0E5;
 }
 

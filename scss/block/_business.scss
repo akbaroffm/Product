@@ -1,0 +1,51 @@
+.business-section{
+    margin-bottom: 150px;
+}
+.business__wrap{
+    width: 1050px;
+    margin: 0 auto;
+
+    @include displayFlex;
+
+    border-radius: 32px;
+    background: #02897A;
+
+    padding: 35px 36px 56px 51px;
+}
+
+.business__content{
+    width: 510px;
+}
+
+.business__title{
+    @include textStyle($color:#fff, $font-size: 32px, $font-weight: 600, $line-height: 151.4%);
+}
+
+.business__btn{
+    cursor: pointer;
+    margin-top: 60px;
+    @include btnStyle($border-radius: 8px, $background:#fff, $color: #02897A);
+    @include transition;
+
+    &:hover{
+        @include btnStyle($border-radius: 8px, $background:#02897A, $color: #fff);
+    }
+}
+
+@media (max-width:949px){
+    .business__content{
+        text-align: center;
+        width: 100%;
+    }
+
+    .business__wrap{
+        text-align: center;
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+    }
+
+    .business-section{
+        margin-bottom: 80px;
+    }   
+}

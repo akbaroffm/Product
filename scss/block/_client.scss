@@ -1,0 +1,66 @@
+.client-section{
+    margin-bottom: 150px;
+}
+
+.client__intro{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.client__title{
+    @include textStyle($font-size: 34px, $font-weight: 700, $line-height: 57px)
+}
+
+.client__text{
+    @include textStyle($font-weight: 500, $line-height: 28px)
+}
+
+.client__wrap{
+    @include displayFlex;
+}
+
+.client__item{
+    width: 327px;
+    padding: 26px 26px 14px 26px;
+    border-radius: 5px;
+    border: 1px solid #DEDEDE;
+}
+
+.client__think{
+    padding: 16px 0;
+    @include textStyle;
+}
+
+.client__about{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.client__name{
+    @include textStyle($color:#02897A, $font-weight: 600, $line-height: 24px);
+}
+
+.client__job{
+    @include textStyle($font-size: 14px, $font-weight: 500, $line-height: 24px);
+}
+
+@media (max-width:949px){
+    .client__intro{
+        width: 100%;
+        padding-bottom: 32px;
+    }
+
+    .client__wrap{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .price-section{
+        margin-bottom: 90px;
+    }
+
+    .client-section{
+        margin-bottom: 100px;
+    }
+}

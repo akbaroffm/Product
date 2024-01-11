@@ -20,8 +20,12 @@ header{
 .navbar__link{
     @include textStyle;
     @include transition;
-
+    
     &:hover{
+        @include textStyle($font-weight:600);
+    }
+    &:focus{
+        color: #173A56;
         font-weight: 600;
     }
 
