@@ -132,8 +132,12 @@
                             </p>
                         </div>
                         <div class="management__img--wrap">
-                            <img class="management__img" src="./images/management@1x.png" alt="document">
+                            <img class="management__img" 
+                            src="./images/management@1x.png" 
+                            srcset="./images/management@1x.png 1x, ./images/management@2x.png 2x" 
+                            alt="document">
                         </div>
+                        
                     </div>
                 </div>
             </section>
@@ -141,8 +145,11 @@
                 <div class="container">
                     <div class="support__wrap">
                         <div class="support__img--wrap">
-                            <img class="support__img" src="./images/support-img@1x.png" alt="search">
-                        </div>
+                            <img class="support__img" 
+                            src="./images/support-img@1x.png" 
+                            srcset="./images/support-img@1x.png 1x, ./images/support-img@2x.png 2x" 
+                            alt="search">
+                        </div>                        
                         <div class="support__info">
                             <span class="support__disc">Easier decision making for</span>
                             <h2 class="support__title">Customer Support</h2>
@@ -179,7 +186,10 @@
                             </p>
                         </div>
                         <div class="collaborative__img--wrap">
-                            <img class="collaborative__img" src="./images/management@1x.png" alt="document">
+                            <img class="management__img" 
+                            src="./images/management@1x.png" 
+                            srcset="./images/management@1x.png 1x, ./images/management@2x.png 2x" 
+                            alt="document">
                         </div>
                     </div>
                 </div>
@@ -230,7 +240,10 @@
                             <ul class="strategy__list">
                                 <li class="strategy__item">
                                     <a class="strategy__link strategy__hover" href="#">
-                                        <img class="strategy__img" src="./images/strategy-img1.png" alt="laptop">
+                                        <img class="strategy__img" 
+                                        src="./images/strategy-img1.png" 
+                                        srcset="./images/strategy-img1.png 1x, ./images/strategy-img1@2x.png 2x" 
+                                        alt="laptop">
                                         <p class="strategy__info">
                                             By <span>Wahid Ari</span> |  03 March 2019
                                         </p>
@@ -239,7 +252,10 @@
                                 </li>
                                 <li class="strategy__item">
                                     <a class="strategy__link strategy__hover" href="#">
-                                        <img class="strategy__img" src="./images/strategy-img2.png" alt="laptop">
+                                        <img class="strategy__img" 
+                                        src="./images/strategy-img2.png" 
+                                        srcset="./images/strategy-img2.png 1x, ./images/strategy-img2@2x.png 2x" 
+                                        alt="laptop">
                                         <p class="strategy__info">
                                             By <span>Wahid Ari</span> |  03 March 2019
                                         </p>
@@ -248,7 +264,10 @@
                                 </li>
                                 <li class="strategy__item">
                                     <a class="strategy__link strategy__hover" href="#">
-                                        <img class="strategy__img" src="./images/strategy-img3.png" alt="laptop">
+                                        <img class="strategy__img" 
+                                        src="./images/strategy-img3.png" 
+                                        srcset="./images/strategy-img3.png 1x, ./images/strategy-img3@2x.png 2x" 
+                                        alt="laptop">
                                         <p class="strategy__info">
                                             By <span>Wahid Ari</span> |  03 March 2019
                                         </p>
@@ -385,7 +404,7 @@
                                     <button class="business__btn">Get This</button>
                                 </div>
                                 <div class="business__img-wrap">
-                                    <img class="business__img" src="./images/business@1x.png" alt="business">
+                                    <img class="business__img" src="./images/business@1x.png" srcset="./images/business@1x.png 1x, ./images/business@2x.png 2x" alt="business">
                                 </div>
                             </div>
                         </div>
@@ -449,8 +468,8 @@
                             <div class="footer__form">
                                 <p class="footer__form-title">knowing you're always on <br> the best energy deal. 
                                 </p>
-                                <form action="https://echo.htmlacademy.ru/" method="get">
-                                    <input class="footer__input" type="email">
+                                <form id="email" action="https://echo.htmlacademy.ru/" method="get">
+                                    <input autocomplete="on" required name="email" class="footer__input" type="email">
                                 </form>
                                 <button type="submit" class="footer__btn">Sign up Now</button>
                             </div>
