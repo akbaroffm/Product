@@ -27,6 +27,17 @@
     border: 1px solid #DEDEDE;
     border-radius: 8px;
     background: #FFF;
+    @include transition;
+
+    // idea
+
+    &:hover{
+        box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.21);
+    }
+
+    &:active{
+        box-shadow: none;
+    }
 }
 
 .strategy__info{
